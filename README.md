@@ -1,0 +1,1 @@
+In this repository I'm going to upload my all data structure programs code in c-language.
