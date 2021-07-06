@@ -14,7 +14,7 @@ struct node* creteNode(){
     return (struct node*)malloc(sizeof(struct node));
 }
 
-void insetNodeatEnd(){
+void insertNodeatEnd(){
     struct node *temp, *t;
     temp = creteNode();
     printf("Input your mark : ");
@@ -76,7 +76,7 @@ int main(int argc, char const *argv[])
         switch (menu())
         {
         case 1:
-            insetNodeatEnd();
+            insertNodeatEnd();
             break;
         case 2:
             deleteAt1st();
