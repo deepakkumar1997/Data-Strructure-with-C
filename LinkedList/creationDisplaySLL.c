@@ -21,6 +21,7 @@ struct node* linkNodes(struct node *start){
     printf("Input mark : ");
     scanf("%d",&newNode->mark);
     newNode->next = NULL;
+    //Linking node to the list
     if(start==NULL)
         start = temp = newNode;
     else{
