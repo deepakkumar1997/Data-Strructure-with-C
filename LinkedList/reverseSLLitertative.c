@@ -26,6 +26,6 @@ struct node* insertAtPosition(struct node *head, int pos, int count){
         printf("Inserted as head node");
     }
     else if(pos==1){
-        temp
+        temp;
     }
 }
