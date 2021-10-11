@@ -65,7 +65,7 @@ void viewList(){
 }
 
 struct node* reverseLinkedList(){
-    struct node* temp1, *temp2;
+    /* struct node* temp1, *temp2;
     if(start==NULL)
         return NULL;
     else{
@@ -78,7 +78,29 @@ struct node* reverseLinkedList(){
             start = temp2;
         }
     }
-    return temp1;
+    return temp1; */
+    /* struct node *fast, *slow;
+    fast = slow = start;
+    while(fast!=NULL&&fast->next!=NULL){
+        slow = slow->next;
+        fast = fast->next->next;
+        if(fast==slow)
+            return true;
+    }
+    return false; */
+    struct node *fast=head, *slow = head;
+    do{
+        slow = slow->next;
+        fast = fast->next->next;
+    }while(slow!=fast);
+
+    fast = head;
+    while(slow->next!=fast->next){
+        slow = slow->next;
+        fast = fast->next;
+    }
+    slow->next = NULL;
+    
 }
 
 int menu(){
